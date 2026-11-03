@@ -55,6 +55,7 @@ body {
 .detail{
     font-weight: 300;
     color: white;
+    white-space: nowrap;
 }
 .det,
 .det2,
