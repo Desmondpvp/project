@@ -77,12 +77,7 @@ section {
     padding: 60px 20px;
     scroll-margin-top: 80px;
 }
-.lab{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
 
 .nav{
     display: flex;
