@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav" id="nav-menu">
+    <a href="home.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="#">SKILLS</a>
+    <a href="#">PORTFOLIO</a>
+    <a href="#">CONTACT</a>
+  </ul>
+  <div class="talk">
+    <a style="text-decoration: none;" href="https://www.whatsapp.com"><h5>Let's Talk   <i class="fa-solid fa-right-long"></i></h5></a>
+  </div>
+  ABOUT SECTIO
+  <section class="bg-section">
+    <div class="head">
+    <h4>MY SKILLS</h4>
+    <h2>Tools & Technology I Use</h2>
+    </div>
+    <div class="box1">
+        <i class="fa-solid fa-code"></i>
+        <h5>HTML & CSS</h5>
+        <p>Build clean responsive and <br> semantic markup for modern <br> websites.</p>
+    </div>
+    <div class="box2">
+        <i class="fa-brands fa-node-js"></i>
+        <h5>JavaScript</h5>
+        <p>Add interactivity and dynamic <br> features to crate engaging <br> user experiences. </p>
+    </div>
+    <div class="box3">
+        <i class="fa-brands fa-react"></i>
+        <h5>React</h5>
+        <p>Create fast and dynamic <br> web aplications with <br> brand identity. </p>
+    </div>
+    <div class="box4">
+        <i class="fa-brands fa-figma"></i>
+        <h5>UI/UX Design</h5>
+        <p>Design intuitive and visually <br> appealing interfaces for <br> better user experiences. </p>
+    </div>
+  </section>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('.nav a');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+</body>
+</html>
