@@ -39,6 +39,22 @@ body {
     display: flex;
     flex-direction: column;
 }
+.contact-text{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.label{
+    font-weight: 600;
+    color: white;
+}
+
+.detail{
+    font-weight: 300;
+    color: white;
+}
+
 
 section {
     min-height: auto;
