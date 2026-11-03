@@ -829,6 +829,28 @@ section {
     .footer-links{
         text-align: center;
     }
+    .lab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .prp {
+        margin-bottom: 20px;
+    }
+
+    .prp img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .abt h5 {
+        position: static !important;
+        margin-bottom: 30px;
+    }
+}
 }
 
 
