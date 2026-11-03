@@ -22,6 +22,24 @@ body {
 .contact-right {
     color: white;
 }
+#home{
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.4),
+            rgba(0,0,0,0.4)
+        ),
+        url("images/wallpaper.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     min-height: auto;
     padding: 60px 20px;
@@ -31,14 +49,19 @@ section {
     position: relative;
     left: 20vh;
 }
-.nav {
+.nav{
     display: flex;
     justify-content: center;
     gap: 30px;
     list-style: none;
     padding: 20px 0;
     flex-wrap: wrap;
+
+    background: transparent;
+    position: relative;
+    z-index: 10;
 }
+
 
 .nav a {
     text-decoration: none;
